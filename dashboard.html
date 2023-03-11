@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    
+</head>
+<body>
+    <div id="users-list">
+        <h1>Dashboard</h1>
+    </div>
+
+    <div class="topnav">
+        <center>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+          </form>
+        </center>
+        </div>
+      </div>
+
+    <div class="row">
+        <div class="column">
+            <br><br>
+            <span style="font-size: larger; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px;">Name: </span>
+        <span style="font-size: larger; font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px">Dr. Sumita Nainan</span>
+        <p></p>
+        <br>
+        <span style="font-size: larger; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px">Specialization: </span>
+        <span style="font-size: larger; font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px;">Neurologist</span>
+        <p></p>
+        <br>
+        <span style="font-size: larger; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px;">Consultant Price: </span>
+        <span style="font-size: larger; font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px">2500</span>
+        </div>
+        <div class="column">
+            <br>
+            <span style="font-size: larger; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px;">Name: </span>
+        <span style="font-size: larger; font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px">Dr. Kalpesh Choudhary</span>
+        <p></p>
+        <br>
+        <span style="font-size: larger; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px">Specialization: </span>
+        <span style="font-size: larger; font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px;">Obstetrics and Gynecology</span>
+        <p></p>
+        <br>
+        <span style="font-size: larger; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px;">Consultant Price: </span>
+        <span style="font-size: larger; font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px">5000</span>
+        </div>
+        <div class="column">
+            <br><br>
+            <span style="font-size: larger; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px;">Name: </span>
+        <span style="font-size: larger; font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px">Dr. Mahir Jain</span>
+        <p></p>
+        <br>
+        <span style="font-size: larger; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px">Specialization: </span>
+        <span style="font-size: larger; font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px;">Orthopedist</span>
+        <p></p>
+        <br>
+        <span style="font-size: larger; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px;">Consultant Price: </span>
+        <span style="font-size: larger; font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px">1500</span>
+        </div>
+        <div class="column"><br><br>
+            <span style="font-size: larger; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px;">Name: </span>
+        <span style="font-size: larger; font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px">Dr. Rachit Mehta</span>
+        <p></p>
+        <br>
+        <span style="font-size: larger; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px">Specialization: </span>
+        <span style="font-size: larger; font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px;">Neurologist</span>
+        <p></p>
+        <br>
+        <span style="font-size: larger; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px;">Consultant Price: </span>
+        <span style="font-size: larger; font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px">1500</span></div>
+        <div class="column"><br><br>
+            <span style="font-size: larger; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px;">Name: </span>
+        <span style="font-size: larger; font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px">Dr. Dinesh Mehta</span>
+        <p></p>
+        <br>
+        <span style="font-size: larger; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px">Specialization: </span>
+        <span style="font-size: larger; font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px;">Cardiology physician</span>
+        <p></p>
+        <br>
+        <span style="font-size: larger; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px;">Consultant Price: </span>
+        <span style="font-size: larger; font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px">3000</span></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="dashboard.js"></script>
+    
+</body>
+</html>
